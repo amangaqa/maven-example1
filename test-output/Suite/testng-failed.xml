@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="crossbrowsertest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="maven_demo_project.CrossBrowserTesting">
+        <methods>
+          <include name="crossbrowsertest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- maven_demo_project.CrossBrowserTesting -->
+    </classes>
+  </test> <!-- crossbrowsertest(failed) -->
+  <test name="assertDemo1(failed)" parallel="tests">
+    <classes>
+      <class name="maven_demo_project.AssertDemo">
+        <methods>
+          <include name="assertDemo2"/>
+          <include name="assertDemo1"/>
+        </methods>
+      </class> <!-- maven_demo_project.AssertDemo -->
+    </classes>
+  </test> <!-- assertDemo1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

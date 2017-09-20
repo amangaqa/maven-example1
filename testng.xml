@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+  <test name="crossbrowsertest">
+  <parameter name="browser" value="firefox"></parameter>
+  
+  <classes>
+  <class name="maven_demo_project.CrossBrowserTesting"/>
+ </classes>
+ </test>
+  <test name="assertDemo1">
+  <classes>
+  <class name="maven_demo_project.AssertDemo">
+  </class>
+  </classes>
+   </test>
+ 
+  <test name="method1">
+  <classes>
+  <class name="maven_demo_project.Maven1">
+  </class>
+ </classes>
+  </test>
+ 
+ <test name="m1">
+  <classes>
+  <class name="maven_demo_project.NewTest">
+  </class>
+ </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
